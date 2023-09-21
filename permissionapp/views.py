@@ -20,7 +20,7 @@ class Registration( CreateAPIView ):
         letters = "CID"
         numbers = ''.join( random.choice( string.digits ) for _ in range( 5 ) )
         return letters + numbers
-    print('hello')
+
 
     def post(self, request, *args, **kwargs):
         try:
